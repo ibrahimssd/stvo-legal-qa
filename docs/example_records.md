@@ -77,8 +77,7 @@ The answer is in fact *supported* by the source; only the label says otherwise.
 A second failure mode is the fabricated citation — one `correct`-labelled record
 under § 19 cites "section § 19(6)", a subsection that does not exist.
 
-Both are visible in the released files. See the *Known limitations* section of the
-[README](../README.md) for what this means for downstream use.
+Both are visible in the released files.
 
 ---
 
