@@ -262,45 +262,6 @@ resulting reports into the tables and figures used in the paper.
 
 ---
 
-## Known limitations
-
-Read these before you treat this as ground truth.
-
-- **Labels are applied by construction, not verified.** A pair is `incorrect`
-  because the generator was *asked* for a contradiction. Spot-checking the
-  released files turns up records where the model complied in form but produced
-  a faithful answer anyway — the § 20 example in
-  [`docs/example_records.md`](docs/example_records.md) is one. **The rate of such
-  label noise has not been measured.** Anyone using this as a benchmark should
-  sample and hand-check before drawing strong conclusions.
-- **Fabricated citations occur.** At least one `correct`-labelled record cites a
-  subsection that does not exist. The validator checks for legal *terminology*,
-  not for whether a cited provision is real.
-- **The English is machine translation**, and it is rough — *"shall not be
-  overwhelmed"* for *"darf nicht überholt werden"* ("may not be overtaken").
-  Some questions are therefore grounded in a mistranslated premise. The German
-  source ships in [`data/source/`](data/source/) so this is traceable.
-- **80 % of questions are phrased as yes/no** despite prompts demanding
-  open-ended questions. The validator removes yes/no questions with *bare*
-  yes/no answers, not yes/no phrasing itself.
-- **The German path does not currently work.** Both German generation runs
-  completed and yielded **zero** surviving pairs — the language-consistency
-  check rejects any pair containing common English function words, and the
-  generators code-switch heavily on German legal text. The zero-yield manifests
-  are shipped in `data/stvo/metadata/` rather than hidden. The released corpus is
-  English-only, generated from the machine-translated statute. Fixing this means
-  loosening that check, not just rerunning the scenario.
-- **Synthetic, not authentic.** These are LLM-generated pairs, not exam
-  questions. They likely under-represent the ambiguity and multi-hop reasoning of
-  real legal assessment. Because training and test pairs come from the same
-  generators, results are evidence about *synthetic* legal QA specifically.
-- **BGB files use an older, different convention** — no quality score, and
-  `label` tracks answer polarity rather than legal support. Published as raw
-  generator output for reuse, not as a labelled benchmark. Do not mix them into
-  the StVO splits without relabelling.
-
----
-
 ## Repository layout
 
 ```
