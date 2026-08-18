@@ -1,0 +1,34 @@
+#!/bin/bash
+# SLURM job for corpus generation — the form the released data was produced in.
+# Resource requests reflect the cluster this ran on; adjust for yours.
+#
+#     sbatch scripts/slurm/generate_dataset.sm
+#
+# Scenario selection lives in scripts/generate_dataset.sh; this wrapper only
+# adds the batch-scheduler envelope.
+
+#SBATCH --job-name=STvO_QA
+#SBATCH --output=logs/out/STvO-QA-%j.out
+#SBATCH --error=logs/err/STvO-QA-%j.err
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=40
+#SBATCH --gres=gpu:1
+#SBATCH --mem=300G
+#SBATCH --time=96:00:00
+
+set -e
+
+mkdir -p logs/out logs/err
+
+# Record which physical GPU this job landed on — useful when several jobs share
+# a node and you are correlating throughput against device.
+nvidia-smi -L
+nvidia-smi
+
+# Activate your environment here, e.g.:
+#   source .venv/bin/activate
+
+HF_TOKEN="${HF_TOKEN:?Set HF_TOKEN in your environment before submitting}"
+export HF_TOKEN
+
+bash scripts/generate_dataset.sh

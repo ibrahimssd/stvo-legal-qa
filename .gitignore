@@ -1,0 +1,26 @@
+# Generated outputs
+outputs/
+evaluation_results/
+clustering_visualization/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environments
+envs/
+.venv/
+venv/
+
+# Experiment tracking
+wandb/
+.matplotlib/
+
+# Job logs
+*.out
+*.err
+
+# System
+.DS_Store

@@ -1,0 +1,25 @@
+{
+  "total_samples": 0,
+  "language": "de",
+  "language_name": "Deutsch",
+  "label_distribution": {
+    "ja": 0,
+    "nein": 0
+  },
+  "balance_ratio": 0.0,
+  "category_distribution": {},
+  "unique_paragraphs": 0,
+  "sentences_processed": 275,
+  "sentences_failed": 275,
+  "success_rate": 0.0,
+  "quality_metrics": {
+    "average_score": 0,
+    "min_score": 0,
+    "max_score": 0
+  },
+  "model_name": "mistralai/Mistral-7B-Instruct-v0.2",
+  "domain_type": "traffic_law",
+  "input_file": "../data/stvo/parsed_main_content_Straßenverkehrs_Ordnung_de.json",
+  "output_file": "../data/synthetic-data/stvo/de/qa_mistral_fast_de.jsonl",
+  "generation_timestamp": "2026-03-04T23:45:03.912702"
+}

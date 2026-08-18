@@ -1,0 +1,29 @@
+{
+  "total_samples": 1000,
+  "language": "en",
+  "language_name": "English",
+  "label_distribution": {
+    "yes": 466,
+    "no": 534
+  },
+  "balance_ratio": 0.8726591760299626,
+  "category_distribution": {
+    "General traffic rules": 646,
+    "II.Signs and transport facilities": 155,
+    "III.Implementation, penalties and final rules": 199
+  },
+  "unique_paragraphs": 58,
+  "sentences_processed": 277,
+  "sentences_failed": 0,
+  "success_rate": 100.0,
+  "quality_metrics": {
+    "average_score": 0.784,
+    "min_score": 0.65,
+    "max_score": 0.8
+  },
+  "model_name": "mistralai/Mistral-7B-Instruct-v0.2",
+  "domain_type": "traffic_law",
+  "input_file": "../data/stvo/m2m100_418M_translated_main_content_Straßenverkehrs_Ordnung.json",
+  "output_file": "../data/synthetic-data/stvo/citations/qa_threshold_0.60_mistral.jsonl",
+  "generation_timestamp": "2025-11-11T17:51:26.920159"
+}

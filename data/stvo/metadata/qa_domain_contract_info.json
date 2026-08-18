@@ -1,0 +1,29 @@
+{
+  "total_samples": 770,
+  "language": "en",
+  "language_name": "English",
+  "label_distribution": {
+    "yes": 292,
+    "no": 478
+  },
+  "balance_ratio": 0.6108786610878661,
+  "category_distribution": {
+    "General traffic rules": 493,
+    "II.Signs and transport facilities": 119,
+    "III.Implementation, penalties and final rules": 158
+  },
+  "unique_paragraphs": 59,
+  "sentences_processed": 277,
+  "sentences_failed": 47,
+  "success_rate": 83.03249097472924,
+  "quality_metrics": {
+    "average_score": 0.796,
+    "min_score": 0.65,
+    "max_score": 1.0
+  },
+  "model_name": "meta-llama/Llama-2-7b-chat-hf",
+  "domain_type": "contract",
+  "input_file": "../data/stvo/m2m100_418M_translated_main_content_Straßenverkehrs_Ordnung.json",
+  "output_file": "../data/synthetic-data/stvo/citations/qa_domain_contract.jsonl",
+  "generation_timestamp": "2025-11-11T22:24:55.225041"
+}

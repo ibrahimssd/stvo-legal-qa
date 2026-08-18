@@ -1,0 +1,52 @@
+{
+  "basic_statistics": {
+    "total_samples": 2309,
+    "label_distribution": {
+      "incorrect": 1169,
+      "correct": 1140
+    },
+    "question_length": {
+      "mean": 14.820268514508445,
+      "std": 4.255809543369286,
+      "min": "4",
+      "max": "32",
+      "median": 14.0
+    },
+    "answer_length": {
+      "mean": 25.255521870939802,
+      "std": 9.892782563992968,
+      "min": "4",
+      "max": "79",
+      "median": 24.0
+    },
+    "unique_paragraphs": 10,
+    "paragraph_distribution": {
+      "§ 20": 389,
+      "§ 36a": 28,
+      "§ 33": 57,
+      "§ 2": 138,
+      "§ 31": 127,
+      "§ 47": 83,
+      "§ 38": 196,
+      "§ 44a": 57,
+      "§ 12": 534,
+      "§ 18": 700
+    }
+  },
+  "linguistic_diversity": {
+    "questions": {
+      "unique_unigrams": 2215,
+      "unique_bigrams": 10163,
+      "unique_trigrams": 17491,
+      "type_token_ratio": 0.06472822910578609,
+      "avg_sentence_length": 14.820268514508445
+    },
+    "answers": {
+      "unique_unigrams": 3724,
+      "unique_bigrams": 18109,
+      "unique_trigrams": 31637,
+      "type_token_ratio": 0.06386007030781103,
+      "avg_sentence_length": 25.255521870939802
+    }
+  }
+}

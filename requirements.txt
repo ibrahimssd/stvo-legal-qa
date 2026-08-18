@@ -1,0 +1,23 @@
+# Core — generation and evaluation
+# PyTorch: install the build matching your CUDA version first, e.g.
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+torch>=2.0
+transformers>=4.40
+datasets
+accelerate
+tokenizers
+
+# Evaluation and reporting
+scikit-learn
+pandas
+numpy
+scipy
+evaluate
+rouge-score
+
+# Visualisation
+matplotlib
+seaborn
+
+# Utilities
+tqdm

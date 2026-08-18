@@ -1,0 +1,29 @@
+{
+  "total_samples": 701,
+  "language": "en",
+  "language_name": "English",
+  "label_distribution": {
+    "yes": 249,
+    "no": 452
+  },
+  "balance_ratio": 0.5508849557522124,
+  "category_distribution": {
+    "General traffic rules": 448,
+    "III.Implementation, penalties and final rules": 136,
+    "II.Signs and transport facilities": 117
+  },
+  "unique_paragraphs": 59,
+  "sentences_processed": 277,
+  "sentences_failed": 4,
+  "success_rate": 98.55595667870037,
+  "quality_metrics": {
+    "average_score": 0.8,
+    "min_score": 0.8,
+    "max_score": 0.8
+  },
+  "model_name": "jpacifico/Chocolatine-14B-Instruct-DPO-v1.2",
+  "domain_type": "traffic_law",
+  "input_file": "../data/stvo/m2m100_418M_translated_main_content_Straßenverkehrs_Ordnung.json",
+  "output_file": "../data/synthetic-data/stvo/citations/qa_chocolatine_balanced.jsonl",
+  "generation_timestamp": "2025-11-11T16:15:41.040632"
+}
