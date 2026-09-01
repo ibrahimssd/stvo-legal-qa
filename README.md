@@ -296,7 +296,7 @@ Scripts are written to run **from the repository root**.
 
 | | |
 |:--|:--|
-| [**stvo-legal-parser**](https://github.com/ibrahimssd/stvo-legal-parser) | The parser that turns raw StVO into the structured JSON in `data/source/`, and builds the legal knowledge graph |
+| [**stvo-legal-knowledge-graph-parser**](https://github.com/ibrahimssd/stvo-legal-knowledge-graph-parser) | The parser that turns raw StVO into the structured JSON in `data/source/`, and builds the legal knowledge graph |
 | [**stvo-llm-driver**](https://github.com/ibrahimssd/stvo-llm-driver) | The research project this corpus was built for — KG-guided multi-task pre-training, and the results reported on this data |
 
 ---
