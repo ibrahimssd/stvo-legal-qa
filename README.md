@@ -322,8 +322,8 @@ model outputs independently of this repository's licence.
   title     = {Enhancing Legal Reasoning in Pre-trained Language Models via
                Knowledge Graph-Guided Multi-Task Pre-training},
   author    = {Siddig, Ibrahim and Georges, Munir},
-  year      = {2026},
-  note      = {Under review}
+  booktitle = {Proceedings of the Natural Legal Language Processing Workshop 2026 (NLLP)},
+  year      = {2026}
 }
 ```
 
