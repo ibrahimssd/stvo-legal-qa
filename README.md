@@ -5,7 +5,6 @@
 ### A synthetic question-answering corpus over German road traffic law — and the pipeline that built it
 
 [![Data](https://img.shields.io/badge/QA%20pairs-12%2C554-blue)]()
-[![Split](https://img.shields.io/badge/split-paragraph--disjoint-success)]()
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Code](https://img.shields.io/badge/code-MIT-green)](LICENSE)
 [![Data license](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE)
